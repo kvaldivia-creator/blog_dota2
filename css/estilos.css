@@ -76,3 +76,13 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px;
     box-sizing: border-box;
 }
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: #1b2127;
+    height: 70px;
+}
