@@ -11,172 +11,189 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <img src="./images/logo.png" alt="Logo de Dota2" >
+        <div class="container">
+            <div class="logo">
+                <img src="./images/logo.png" alt="Logo de Dota2" >
+            </div>
+            <nav class="menu">
+                <ul class="list">
+                    <li class="item">
+                        <a href="#inicio" class="link">Inicio</a>
+                    </li>
+                    <li class="item">
+                        <a href="#heroes" class="link">Heroes</a>
+                    </li>
+                    <li class="item">
+                        <a href="#international" class="link">La International</a>
+                    </li>
+                    <li class="item">
+                        <a href="#contacto" class="link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="menu">
-            <ul class="list">
-                <li class="item">
-                    <a href="#inicio" class="link">Inicio</a>
-                </li>
-                <li class="item">
-                    <a href="#heroes" class="link">Heroes</a>
-                </li>
-                <li class="item">
-                    <a href="#international" class="link">La International</a>
-                </li>
-                <li class="item">
-                    <a href="#contacto" class="link">Contacto</a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     <section id="inicio" class="main">
-        <h1 class="main-title">
-            <strong>Dota 2</strong> es un juego multijugador <br> de <strong>estrategia</strong> en tiempo real, <br> distribuido por la <br> plataforma <strong>Steam de Valve</strong>.
-        </h1>
-        <!--
+        <div class="container">
+            <h1 class="main-title">
+                <strong>Dota 2</strong> es un juego multijugador <br> de <strong>estrategia</strong> en tiempo real, <br> distribuido por la <br> plataforma <strong>Steam de Valve</strong>.
+            </h1>
             <div class="main-image">
-                <img src="./images/hero-dota2.jpg" alt="Hero de Dota 2">
+                <img src="./images/hero-dota2.jpg" width="500" height="300" alt="Hero de Dota 2">
             </div>
-        -->
+        </div>
     </section>
 
     <section id="heroes" class="heroes">
-        <h2>Los heroes destacados de Dota 2</h2>
-        <article class="hero">
-            <div class="hero-details">
-                <h3 class="hero-title">Earth Spirit</h3>
-                <p class="hero-description">
-                    En lo más profundo de las Tierras Altas, entre sus peñascos y precipicios, existe un filón de jade sagrado al que renegaron los mineros de las tierras altas. 
-                </p>
-                <h4 class="hero-abilities">Habilidades</h4>
-                <p class="skill">Golpe de Roca</p>
-                <p class="skill">Roca Rodante</p>
-                <p class="skill">Atracción Geomagnética</p>
-                <p class="skill">Magnetizar</p>
-            </div>
-            <div class="hero-imageContainer">
-                <img class="hero-image" src="./images/earth-spirit.jpg" width="500" alt="">
-            </div>
-        </article>
-
-        <article class="hero">
-            <div class="hero-details">
-                <h3 class="hero-title">Earthshaker</h3>
-                <p class="hero-description">
-                    Como un gólem o una gárgola, Earthshaker fue uno con la tierra, pero ahora camina libremente sobre ella. A diferencia de las otras entidades, se creó a sí mismo a través de un acto de voluntad, y no sirve a ningún otro maestro. 
-                </p>
-                <h4 class="hero-abilities">Habilidades</h4>
-                <p class="skill">Fisura</p>
-                <p class="skill">Encantar Tótem</p>
-                <p class="skill">Réplica</p>
-                <p class="skill">Golpe Resonante</p>
-            </div>
-            <div class="hero-imageContainer">
-                <img class="hero-image" src="./images/earthshaker.jpg" width="500" alt="">
-            </div>
-        </article>
-
-        <article class="hero">
-            <div class="hero-details">
-                <h3 class="hero-title">Night Stalker</h3>
-                <p class="hero-description">
-                    Sobre Balanar, el Acechador Nocturno (Night Stalker), no hay historia, solo leyendas. En todas las razas y culturas existen relatos ancestrales de una época imposible antes de la luz del sol y del día, cuando solo la noche reinaba y el mundo estaba dominado por las criaturas de la oscuridad, criaturas como el Acechador Nocturno.
-                </p>
-                <h4 class="hero-abilities">Habilidades</h4>
-                <p class="skill">Vacío</p>
-                <p class="skill">Miedo Paralizante</p>
-                <p class="skill">Cazador Nocturno</p>
-                <p class="skill">Ascensión Oscura</p>
-            </div>
-            <div class="hero-imageContainer">
-                <img class="hero-image" src="./images/night-stalker.jpg" width="500" alt="">
-            </div>
-        </article>
-
-        <article class="hero">
-            <div class="hero-details">
-                <h3 class="hero-title">Shadow Fiend</h3>
-                <p class="hero-description">
-                    Se dice que Nevermore, el Diablo de las Sombras (Shadow Fiend), tiene alma de poeta; de hecho, tiene miles de ellas. Durante los años se ha hecho con las almas de poetas, monjes, emperadores, mendigos, esclavos, filósofos, criminales y, naturalmente, héroes.
-                </p>
-                <h4 class="hero-abilities">Habilidades</h4>
-                <p class="skill">Sombra Arrasante</p>
-                <p class="skill">Maestría Nigromántica</p>
-                <p class="skill">Presencia del Señor Oscuro</p>
-                <p class="skill">Réquiem de las Almas</p>
-            </div>
-            <div class="hero-imageContainer">
-                <img class="hero-image" src="./images/shadow-fiend.jpg" width="500" alt="">
-            </div>
-        </article>
+        <div class="container">
+            <h2>Los heroes destacados de Dota 2</h2>
+            <article class="hero">
+                <div class="hero-details">
+                    <h3 class="hero-title">Earth Spirit</h3>
+                    <p class="hero-description">
+                        En lo más profundo de las Tierras Altas, entre sus peñascos y precipicios, existe un filón de jade sagrado al que renegaron los mineros de las tierras altas. 
+                    </p>
+                    <h4 class="hero-abilities">Habilidades</h4>
+                    <p class="skill">Golpe de Roca</p>
+                    <p class="skill">Roca Rodante</p>
+                    <p class="skill">Atracción Geomagnética</p>
+                    <p class="skill">Magnetizar</p>
+                </div>
+                <div class="hero-imageContainer">
+                    <img class="hero-image" src="./images/earth-spirit.jpg" width="500" alt="">
+                </div>
+            </article>
+    
+            <article class="hero">
+                <div class="hero-details">
+                    <h3 class="hero-title">Earthshaker</h3>
+                    <p class="hero-description">
+                        Como un gólem o una gárgola, Earthshaker fue uno con la tierra, pero ahora camina libremente sobre ella. A diferencia de las otras entidades, se creó a sí mismo a través de un acto de voluntad, y no sirve a ningún otro maestro. 
+                    </p>
+                    <h4 class="hero-abilities">Habilidades</h4>
+                    <p class="skill">Fisura</p>
+                    <p class="skill">Encantar Tótem</p>
+                    <p class="skill">Réplica</p>
+                    <p class="skill">Golpe Resonante</p>
+                </div>
+                <div class="hero-imageContainer">
+                    <img class="hero-image" src="./images/earthshaker.jpg" width="500" alt="">
+                </div>
+            </article>
+    
+            <article class="hero">
+                <div class="hero-details">
+                    <h3 class="hero-title">Night Stalker</h3>
+                    <p class="hero-description">
+                        Sobre Balanar, el Acechador Nocturno (Night Stalker), no hay historia, solo leyendas. En todas las razas y culturas existen relatos ancestrales de una época imposible antes de la luz del sol y del día, cuando solo la noche reinaba y el mundo estaba dominado por las criaturas de la oscuridad, criaturas como el Acechador Nocturno.
+                    </p>
+                    <h4 class="hero-abilities">Habilidades</h4>
+                    <p class="skill">Vacío</p>
+                    <p class="skill">Miedo Paralizante</p>
+                    <p class="skill">Cazador Nocturno</p>
+                    <p class="skill">Ascensión Oscura</p>
+                </div>
+                <div class="hero-imageContainer">
+                    <img class="hero-image" src="./images/night-stalker.jpg" width="500" alt="">
+                </div>
+            </article>
+    
+            <article class="hero">
+                <div class="hero-details">
+                    <h3 class="hero-title">Shadow Fiend</h3>
+                    <p class="hero-description">
+                        Se dice que Nevermore, el Diablo de las Sombras (Shadow Fiend), tiene alma de poeta; de hecho, tiene miles de ellas. Durante los años se ha hecho con las almas de poetas, monjes, emperadores, mendigos, esclavos, filósofos, criminales y, naturalmente, héroes.
+                    </p>
+                    <h4 class="hero-abilities">Habilidades</h4>
+                    <p class="skill">Sombra Arrasante</p>
+                    <p class="skill">Maestría Nigromántica</p>
+                    <p class="skill">Presencia del Señor Oscuro</p>
+                    <p class="skill">Réquiem de las Almas</p>
+                </div>
+                <div class="hero-imageContainer">
+                    <img class="hero-image" src="./images/shadow-fiend.jpg" width="500" alt="">
+                </div>
+            </article>
+        </div>
     </section>
 
-    <h2 class="event-list-title">La Internacional</h2>
+    <div class="container">
+        <h2 class="event-list-title">La Internacional</h2>
+    </div>
 
     <section id="international" class="events">
-        
-        <article class="event">
-            <div class="event-imageContainer">
-                <img class="event-image" src="./images/dota-2-inmortales-compendio-international-2019.jpg" width="500" alt="">
-            </div>
-            <div class="event-detail">
-                <h3 class="event-title">Dota2 inmortales compendio international 2019</h3>
-                <p class="event-description">Una vez por semana, con más oportunidades disponibles en niveles de batalla superiores, tendrás la opción de duplicar tu pérdida o ganancia potencial de MMR de una partida.</p>
-                <a class="event-url" href="https://larepublica.pe/videojuegos/2019/08/18/ti9-infamous-vs-keen-gaming-the-international-2019-evento-principal-mundial-de-dota-2-fase-de-grupos-ti9-analisis/" target="_blank">Ver Batalla</a>
-            </div>
-        </article>
-
-        <article class="event">
-            <div class="event-imageContainer">
-                <img class="event-image" src="./images/dota-2-inmortales-compendio-international-2019.jpg" width="500" alt="">
-            </div>
-            <div class="event-detail">
-                <h3 class="event-title">Dota2 inmortales compendio international 2019</h3>
-                <p class="event-description">Una vez por semana, con más oportunidades disponibles en niveles de batalla superiores, tendrás la opción de duplicar tu pérdida o ganancia potencial de MMR de una partida.</p>
-                <a class="event-url" href="https://larepublica.pe/videojuegos/2019/08/18/ti9-infamous-vs-keen-gaming-the-international-2019-evento-principal-mundial-de-dota-2-fase-de-grupos-ti9-analisis/" target="_blank">Ver Batalla</a class="event-url">
-            </div>
-        </article>
-
-        <article class="event">
-            <div class="event-imageContainer">
-                <img class="event-image" src="./images/Inmortal_Treasure2.jpg" width="500" alt="" >
-            </div>
-            <div class="event-detail">
-                <h3 class="event-title">Dota2 inmortales compendio international 2019</h3>
-                <p class="event-description">¿Tienes un inmortal repetido y no sabes a quién regalárselo? Recicla cuatro objetos inmortales que no quieras para recibir un Tesoro de Aspecto Inmortal sin abrir y una tirada adicional en la Bendición de Batalla de Rylai.</p>
-                <a class="event-url" href="https://larepublica.pe/videojuegos/2019/08/18/ti9-infamous-vs-keen-gaming-the-international-2019-evento-principal-mundial-de-dota-2-fase-de-grupos-ti9-analisis/" target="_blank">Ver Batalla</a>
-            </div>
-        </article>
-
-        <article class="event">
-            <div class="event-imageContainer">
-                <img class="event-image" src="./images/Inmortal_Treasure2.jpg" width="500" alt="">
-            </div>
-            <div class="event-detail">
-                <h3 class="event-title">Dota2 inmortales compendio international 2019</h3>
-                <p class="event-description">¿Tienes un inmortal repetido y no sabes a quién regalárselo? Recicla cuatro objetos inmortales que no quieras para recibir un Tesoro de Aspecto Inmortal sin abrir y una tirada adicional en la Bendición de Batalla de Rylai.</p>
-                <a class="event-url" href="https://larepublica.pe/videojuegos/2019/08/18/ti9-infamous-vs-keen-gaming-the-international-2019-evento-principal-mundial-de-dota-2-fase-de-grupos-ti9-analisis/" target="_blank">Ver Batalla</a>
-            </div>
-        </article>
+        <div class="container">
+            <article class="event">
+                <div class="event-imageContainer">
+                    <img class="event-image" src="./images/dota-2-inmortales-compendio-international-2019.jpg" width="500" alt="">
+                </div>
+                <div class="event-detail">
+                    <h3 class="event-title">Dota2 inmortales compendio international 2019</h3>
+                    <p class="event-description">Una vez por semana, con más oportunidades disponibles en niveles de batalla superiores, tendrás la opción de duplicar tu pérdida o ganancia potencial de MMR de una partida.</p>
+                    <a class="event-url" href="https://larepublica.pe/videojuegos/2019/08/18/ti9-infamous-vs-keen-gaming-the-international-2019-evento-principal-mundial-de-dota-2-fase-de-grupos-ti9-analisis/" target="_blank">Ver Batalla</a>
+                </div>
+            </article>
+    
+            <article class="event">
+                <div class="event-imageContainer">
+                    <img class="event-image" src="./images/dota-2-inmortales-compendio-international-2019.jpg" width="500" alt="">
+                </div>
+                <div class="event-detail">
+                    <h3 class="event-title">Dota2 inmortales compendio international 2019</h3>
+                    <p class="event-description">Una vez por semana, con más oportunidades disponibles en niveles de batalla superiores, tendrás la opción de duplicar tu pérdida o ganancia potencial de MMR de una partida.</p>
+                    <a class="event-url" href="https://larepublica.pe/videojuegos/2019/08/18/ti9-infamous-vs-keen-gaming-the-international-2019-evento-principal-mundial-de-dota-2-fase-de-grupos-ti9-analisis/" target="_blank">Ver Batalla</a class="event-url">
+                </div>
+            </article>
+    
+            <article class="event">
+                <div class="event-imageContainer">
+                    <img class="event-image" src="./images/Inmortal_Treasure2.jpg" width="500" alt="" >
+                </div>
+                <div class="event-detail">
+                    <h3 class="event-title">Dota2 inmortales compendio international 2019</h3>
+                    <p class="event-description">¿Tienes un inmortal repetido y no sabes a quién regalárselo? Recicla cuatro objetos inmortales que no quieras para recibir un Tesoro de Aspecto Inmortal sin abrir y una tirada adicional en la Bendición de Batalla de Rylai.</p>
+                    <a class="event-url" href="https://larepublica.pe/videojuegos/2019/08/18/ti9-infamous-vs-keen-gaming-the-international-2019-evento-principal-mundial-de-dota-2-fase-de-grupos-ti9-analisis/" target="_blank">Ver Batalla</a>
+                </div>
+            </article>
+    
+            <article class="event">
+                <div class="event-imageContainer">
+                    <img class="event-image" src="./images/Inmortal_Treasure2.jpg" width="500" alt="">
+                </div>
+                <div class="event-detail">
+                    <h3 class="event-title">Dota2 inmortales compendio international 2019</h3>
+                    <p class="event-description">¿Tienes un inmortal repetido y no sabes a quién regalárselo? Recicla cuatro objetos inmortales que no quieras para recibir un Tesoro de Aspecto Inmortal sin abrir y una tirada adicional en la Bendición de Batalla de Rylai.</p>
+                    <a class="event-url" href="https://larepublica.pe/videojuegos/2019/08/18/ti9-infamous-vs-keen-gaming-the-international-2019-evento-principal-mundial-de-dota-2-fase-de-grupos-ti9-analisis/" target="_blank">Ver Batalla</a>
+                </div>
+            </article>
+        </div>
     </section>
 
     <section id="contacto" class="contact"> 
-        <form action="" class="form-email">
-            <h3 class="">¿Juguemos en un mismo Team?</h3>
-            <input type="text" placeholder="Dejame tu ID">
-            <button>Enviar</button>
-        </form>
+        <div class="container">
+            <form action="" class="form-email">
+                <h3 class="form-title">¿Juguemos en un mismo Team?</h3>
+                <input class="input" type="text" placeholder="Dejame tu ID">
+                <button class="button">Enviar</button>
+            </form>
+            <div class="social">
+                <a href="#" class="social-link facebook"></a>
+                <a href="#" class="social-link twitter"></a>
+                <a href="#" class="social-link youtube"></a>
+                <a href="#" class="social-link instagram"></a>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
-        <div class="">
-            <p>Curso de desarrollo web online 2020</p>
-        </div>
-        <div class="">
-            <p>Designed with <\3 by <a href="#" ></a>@thespianartist</p>
+        <div class="container">
+            <div class="">
+                <p>Curso de desarrollo web online 2020</p>
+            </div>
+            <div class="">
+                <p>Designed with <\3 by <a href="#" ></a>@thespianartist</p>
+            </div>
         </div>
     </footer>
 </body>

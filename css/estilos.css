@@ -15,7 +15,6 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -.2px;
     color: #fff;
     margin: 0;
-    margin-left: 50px;
 }
 
 .main-title strong {
@@ -24,13 +23,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .main {
     height: 300px;
-    background-image: url(../images/hero-dota2.jpg);
+    /*background-image: url(../images/hero-dota2.jpg);
     background-repeat: no-repeat;
     background-size: 500px 300px;
-    background-position-x: right;
+    background-position-x: right;*/
     background-color: #1b2127;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.main-image img {
+    object-fit: cover;
 }
 
 .header {
@@ -119,6 +123,7 @@ h2 {
 
 .events {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .event {
@@ -156,6 +161,73 @@ h2 {
     text-decoration: none;
 }
 
+.contact {
+    background-color: #1b2127;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+.form-email h3{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: -.2px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.input {
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px 20px 10px 30px;
+    background-image: url(../images/send.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.button {
+    display: block;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    background-color: #fff;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+.social-link.facebook {
+    overflow: hidden;
+}
+
+.social-link.facebook {
+    background-image: url(../images/facebook.png);
+}
+
+.social-link.twitter {
+    background-image: url(../images/twitter.png);
+}
+.social-link.youtube {
+    background-image: url(../images/youtube.png);
+}
+
+.social-link.instagram {
+    background-image: url(../images/instagram.png);
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -163,4 +235,15 @@ h2 {
     color: #fff;
     background-color: #1b2127;
     height: 70px;
+}
+
+.container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: wrap;
 }
