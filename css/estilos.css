@@ -80,7 +80,8 @@ h2 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     font-size: 24px;
-    margin-bottom: 40px;
+    margin: 0;
+    padding: 20px 0;
 }
 
 .heroes h4{
@@ -122,7 +123,8 @@ h2 {
 }
 
 .event-list-title {
-    margin-left: 20px;
+    padding: 20px 10px;
+    margin: 0;
 }
 
 .events {
