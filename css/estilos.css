@@ -31,6 +31,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .main-image img {
@@ -43,6 +44,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    flex-wrap: wrap;
 }
 
 .menu {
@@ -53,7 +55,6 @@ h1, h2, h3, h4, h5, h6 {
     list-style: none;
     margin: 0;
     display: flex;
-    justify-content: space-evenly;
     height: inherit;
 }
 
@@ -79,17 +80,15 @@ h2 {
     color: #9c3627;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
     margin: 0;
-    padding: 20px 0;
-}
-
-.heroes h4{
-    font-size: 20px;
+    padding-bottom: 20px;
 }
 
 .hero-details {
-    width: 500px;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .hero-title {
@@ -99,15 +98,21 @@ h2 {
 }
 
 .hero-description {
-    font-size: 20px;
+    font-size: 1rem;
+    margin: 0;
 }
 
 .hero-abilities {
-    margin: 30px 0 10px;
+    margin: 10px 0;
+    font-size: 20px;
 }
 
 .hero-imageContainer {
-    width: 500px;
+    width: 50%;
+}
+
+.hero-image {
+    max-width: 100%;
 }
 
 .skill {
@@ -116,10 +121,10 @@ h2 {
 
 .hero {
     margin-bottom: 15px;
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .event-list-title {
@@ -133,8 +138,8 @@ h2 {
 }
 
 .event {
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     border-radius: 10px;
     overflow: hidden;
     flex-shrink: 0;
@@ -174,6 +179,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     height: 200px;
+    flex-wrap: wrap;
 }
 
 .form-email h3{
@@ -241,10 +247,12 @@ h2 {
     color: #fff;
     background-color: #1b2127;
     height: 70px;
+    flex-wrap: wrap;
 }
 
 .container {
-    width: 1000px;
+    max-width: 1000px;
+    flex: 1;
     margin-left: auto;
     margin-right: auto;
     display: inherit;
@@ -252,4 +260,158 @@ h2 {
     align-items: inherit;
     height: inherit;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 1em;
+    }
+
+    .main {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+
+    .main-image {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .main-title {
+        font-size: 1.8em;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        display: block;
+        height: auto;
+    }
+
+    .logo {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .menu .list {
+        display: initial;
+    }
+
+    .menu .item {
+        height: 50px;
+        margin-right: initial;
+    }
+
+    .menu .link {
+        justify-content: center;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .hero-imageContainer {
+        width: auto;
+        text-align: center;
+    }
+
+    .skill, .hero-abilities {
+        margin: .6em 0 .2em;
+    }
+
+    .hero-details {
+        width: auto;
+        padding: .7em;
+    }
+
+    .hero-title {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .hero-description {
+        font-size: 1em;
+    }
+
+    .hero-abilities {
+        font-size: 1.2em;
+    }
+
+    .skill {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .event {
+        width: auto;
+        flex-shrink: initial;
+    }
+
+    .event img {
+        width: 100%;
+    }
+
+    .social {
+        margin: 1em 0 0 ;
+    }
+
+    .contact {
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+
+    .input {
+        display: initial;
+    }
+
+    .button {
+        margin: 1em auto;
+    }
+
+    .form-email h3 {
+        margin: 0 0 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-title {
+        font-size: 1.5em;
+    }
+
+    .hero-details {
+        font-size: 12px;
+    }
+
+    .event-detail {
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+
+    .footer {
+        height: auto;
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-title {
+        font-size: 1.2em;
+    }
+
+    .main {
+        padding: 2em 1em;
+    }
 }
